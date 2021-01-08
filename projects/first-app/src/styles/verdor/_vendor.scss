@@ -1,0 +1,160 @@
+
+// Variable overrides
+
+// Typography
+$font-family-base: 'Roboto';
+$font-size-base: 1.6rem;
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+
+$custom-font-sizes: (
+  7: 2rem,
+  8: 1.5rem,
+  9: 1.2rem,
+  10: 1rem
+);
+
+// Merge the maps
+$font-sizes: map-merge($font-sizes, $custom-font-sizes);
+
+// Padding and border radius
+$border-radius-lg: 1.6rem;
+$badge-border-radius: 50%;
+//$badge-padding-y: 0.9rem;
+//$badge-padding-x: 1.2rem;
+
+// Colors
+// Create your own map
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+$custom-colors: (
+  "white": $white,
+  "gray-200": $gray-200,
+  "primary": $cyan-500,
+  "secondary": $blue-900,
+  "card-default": $white,
+  "card-primary": $cyan-500,
+  "card-secondary": $blue-800,
+  "card-tertiary": $green-200,
+  "card-icon": $blue-100,
+  "badge-pink": $pink-500,
+  "badge-icon-cyan": $cyan-500,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+// Background gradients
+.btn-circle--gradient {
+  background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
+}
+
+// Required - Configuration
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+@import "node_modules/bootstrap/scss/utilities";
+
+// Optional - Layout & components
+@import "node_modules/bootstrap/scss/root";
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/type";
+@import "node_modules/bootstrap/scss/images";
+@import "node_modules/bootstrap/scss/containers";
+@import "node_modules/bootstrap/scss/grid";
+@import "node_modules/bootstrap/scss/tables";
+@import "node_modules/bootstrap/scss/forms";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/transitions";
+@import "node_modules/bootstrap/scss/dropdown";
+@import "node_modules/bootstrap/scss/button-group";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+@import "node_modules/bootstrap/scss/card";
+@import "node_modules/bootstrap/scss/accordion";
+@import "node_modules/bootstrap/scss/breadcrumb";
+@import "node_modules/bootstrap/scss/pagination";
+@import "node_modules/bootstrap/scss/badge";
+@import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/progress";
+@import "node_modules/bootstrap/scss/list-group";
+@import "node_modules/bootstrap/scss/close";
+@import "node_modules/bootstrap/scss/toasts";
+@import "node_modules/bootstrap/scss/modal";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/popover";
+@import "node_modules/bootstrap/scss/carousel";
+@import "node_modules/bootstrap/scss/spinners";
+
+// Helpers
+@import "node_modules/bootstrap/scss/helpers";
+
+// Utilities
+@import "node_modules/bootstrap/scss/utilities/api";
+
+
+@import "node_modules/bootstrap/scss/functions";
+.badge-notification {
+  @extend .badge;
+  padding: 0.9rem 1.2rem;
+}
+
+.badge-icon {
+  @extend .badge;
+  padding: 0.7rem 0.7rem;
+}
+
+.nav-link__icon,
+.btn__icon,
+{
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: $gray-500;
+
+  &--white {
+    fill: $white;
+  }
+
+  &--cyan {
+    fill: $cyan-500;
+  }
+}
+
+.btn-circle {
+  @extend .btn;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.btn-circle > * {
+  position: relative;
+  top: -1px;
+}
+
+.btn-circle-sm {
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  font-size: 0.9rem;
+}
+
+.btn-circle-lg {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  font-size: 1.1rem;
+}
+
+.btn-circle-xl {
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  font-size: 1.3rem;
+}
+

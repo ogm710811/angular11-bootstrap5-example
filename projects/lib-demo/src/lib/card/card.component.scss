@@ -1,0 +1,30 @@
+.card-small {
+  width: 15.6rem;
+  max-width: 15.6rem;
+  height: 16.6rem;
+}
+
+.card-medium {
+  width: 32.6rem;
+  height: 16.6rem;
+}
+
+.card-large {
+  width: 50rem;
+  height: 34.6rem;
+}
+
+.card-box {
+  position: relative;
+
+  &__notification {
+    position: absolute;
+    top: -1.2rem;
+    right: 0.5rem;
+  }
+
+  &__icon {
+    width: 1.7rem;
+    height: 1.7rem;
+  }
+}

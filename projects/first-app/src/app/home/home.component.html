@@ -1,0 +1,109 @@
+<div class="container pb-5">
+  <div class="row">
+    <div class="col-md-10 col-xl-12">
+      <div class="row row-cols-auto row-cols-md-auto row-cols-md-4 row-cols-lg-auto row-cols-lg-5">
+        <div class="col col-md-auto col-lg-auto mb-4 mb-xl-0">
+          <ld-card [cardConfig]="customCardSettings1">
+            <button class="btn btn-circle btn-transparent border border-white m-1">
+              <svg class="btn__icon btn__icon--white" version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                <title>plus1</title>
+                <path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+              </svg>
+            </button>
+            <p class="fs-9 fw-bold text-white text-center px-5">Add workspace</p>
+          </ld-card>
+        </div>
+        <div class="col col-md-auto col-lg-auto">
+          <ld-card [cardConfig]="customCardSettings2">
+            <button class="btn btn-circle btn-card-icon border border-white m-1">
+              <h3 class="display-3 fw-bolder text-white">U</h3>
+            </button>
+            <p class="fs-9 fw-bold text-black text-center px-2">User management > Add a new user</p>
+          </ld-card>
+        </div>
+        <div class="col col-md-auto col-lg-auto mb-4 mb-xl-0">
+          <ld-card [cardConfig]="customCardSettings3">
+            <button class="btn btn-circle btn-card-icon border border-white m-1">
+              <h3 class="display-3 fw-bolder text-white">P</h3>
+            </button>
+            <p class="fs-9 fw-bold text-black text-center px-5">Payroll center</p>
+          </ld-card>
+        </div>
+        <div class="col col-md-auto col-lg-auto">
+          <ld-card [cardConfig]="customCardSettings4">
+            <button class="btn btn-circle btn-card-icon border border-white m-1">
+              <h3 class="display-3 fw-bolder text-white">R</h3>
+            </button>
+            <p class="fs-9 fw-bold text-black text-center">Report | Millennial contribution 2020</p>
+          </ld-card>
+        </div>
+        <div class="col col-md-auto col-lg-auto">
+          <ld-card [cardConfig]="customCardSettings5">
+            <button class="btn btn-circle btn-card-icon border border-white m-1">
+              <h3 class="display-3 fw-bolder text-white">I</h3>
+            </button>
+            <p class="fs-9 fw-bold text-black pb-4">Insights</p>
+          </ld-card>
+        </div>
+        <div class="col col-md-auto col-lg-auto d-flex align-items-center">
+          <button class="btn btn-circle btn-white border border-white m-1">
+            <svg class="btn__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <title>arrow_forward</title>
+              <path d="M12 3.984l8.016 8.016-8.016 8.016-1.406-1.406 5.578-5.625h-12.188v-1.969h12.188l-5.578-5.625z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row row-cols-auto row-cols-sm-1 row-cols-md-2 mt-4">
+    <div class="col col-md-auto mb-4 mb-xl-0">
+      <ld-card [cardConfig]="customCardSettings6">6</ld-card>
+    </div>
+    <div class="col col-md-auto">
+      <div class="row row-cols-auto row-cols-1">
+        <div class="col col-sm-auto col-md-auto">
+          <ld-card [cardConfig]="customCardSettings7">
+            <ag-charts-angular
+              [options]="optionsSimpleLine"
+            ></ag-charts-angular>
+            <div class="row px-4 py-2 bg-secondary row-rounded__bottom">
+              <div class="col-6 text-white fw-light px-2">
+                <span class="fs-10">Participants with a balance</span>
+                <br>
+                <span class="fs-8">9,876</span>
+              </div>
+              <div class="col-6 text-white fw-light px-2">
+                <span class="fs-10">Total balance</span>
+                <br>
+                <span class="fs-8">$459,876,892.36</span>
+              </div>
+            </div>
+          </ld-card>
+        </div>
+      </div>
+      <div class="row row-cols-auto row-cols-2 mt-4">
+        <div class="col col-sm-auto col-md-auto">
+          <ld-card [cardConfig]="customCardSettings8">
+            <div class="cta">
+              <p class="fs-6 fw-bold text-black text-left px-3">
+                <span class="text-primary">How to</span>
+                automate your payroll
+              </p>
+            </div>
+          </ld-card>
+        </div>
+        <div class="col col-sm-auto col-md-auto">
+          <ld-card #ldCard [cardConfig]="customCardSettings9">
+            <label class="position-absolute top-0 start-0 py-3 px-3 fs-6 text-white fw-light">87%</label>
+            <label class="position-absolute top-50 start-50 translate-middle fs-10 text-center text-white fw-light">Retirement readiness</label>
+            <ag-charts-angular
+              [options]="optionsDoughnut"
+            ></ag-charts-angular>
+          </ld-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
