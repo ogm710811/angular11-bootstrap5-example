@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {AgChartOptions, AgPieSeriesOptions} from 'ag-charts-community';
-import {AgChartThemeName} from 'ag-grid-community';
+import {Component, OnInit} from '@angular/core';
+import {AgChartOptions} from 'ag-charts-community';
 import {CustomCardColors} from '../../../../lib-demo/src/lib/enums/custom-card-colors.enum';
 import {CustomCardSizes} from '../../../../lib-demo/src/lib/enums/custom-card-sizes.enum';
 

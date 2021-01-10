@@ -106,6 +106,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   padding: 0.7rem 0.7rem;
 }
 
+.sidebar-wrapper {
+  @include media-breakpoint-up(md) {
+    & {
+      flex: 0 0 1;
+      width: auto;
+    }
+  }
+}
+
 .nav-link__icon,
 .btn__icon,
 {
