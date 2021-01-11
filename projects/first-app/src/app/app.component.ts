@@ -1,6 +1,4 @@
 import {Component} from '@angular/core';
-import {CustomCardColors} from '../../../lib-demo/src/lib/enums/custom-card-colors.enum';
-import {CustomCardSizes} from '../../../lib-demo/src/lib/enums/custom-card-sizes.enum';
 
 @Component({
   selector: 'app-root',

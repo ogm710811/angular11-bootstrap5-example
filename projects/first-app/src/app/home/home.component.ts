@@ -1,8 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import {AgChartOptions, AgPieSeriesOptions} from 'ag-charts-community';
-import {AgChartThemeName} from 'ag-grid-community';
-import {CustomCardColors} from '../../../../lib-demo/src/lib/enums/custom-card-colors.enum';
-import {CustomCardSizes} from '../../../../lib-demo/src/lib/enums/custom-card-sizes.enum';
+import {Component, OnInit} from '@angular/core';
+import {AgChartOptions} from 'ag-charts-community';
 
 @Component({
   selector: 'app-home',
@@ -14,64 +11,64 @@ export class HomeComponent implements OnInit {
   optionsSimpleLine: AgChartOptions;
 
   customCardSettings1 = {
-    bgColor: CustomCardColors.primary,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-primary'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings2 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: true,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings3 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings4 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings5 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: true,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings6 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.large,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-xl', 'pill-h-m'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings7 = {
-    bgColor: CustomCardColors.secondary,
-    cardSize: CustomCardSizes.medium,
+    bgColor: ['bg-card-secondary'],
+    cardWidth: ['pill-w-l', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
-    bodyAlignment: ['flex-column']
+    bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings8 = {
-    bgColor: CustomCardColors.tertiary,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-tertiary'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
-    bodyAlignment: ['align-items-end']
+    bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings9 = {
-    bgColor: CustomCardColors.primary,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-primary'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']

@@ -8,11 +8,37 @@ import {CustomCardSettings} from '../models/custom-card-settings';
 })
 export class CardComponent {
   get customCardClasses(): string[] {
-    const settings = [];
+    let settings: string[] = [];
     for (const key in this.cardConfig) {
       if (this.cardConfig) {
-        if (key !== 'hasNotification' && key !== 'hasIconBadge' && key !== 'bodyAlignment') {
-          settings.push(this.cardConfig[key]);
+        if (key === 'bgColor' || key === 'cardWidth') {
+          const width = this.cardConfig.cardWidth;
+          // @ts-ignore
+          settings = (this.cardConfig.bgColor).concat(width);
+        }
+      }
+    }
+    return settings;
+  }
+
+  get customCardBgColor(): string[] {
+    let settings: string[] = [];
+    for (const key in this.cardConfig) {
+      if (this.cardConfig) {
+        if (key === 'bgColor') {
+          settings = [...this.cardConfig[key]];
+        }
+      }
+    }
+    return settings;
+  }
+
+  get customCardWidth(): string[] {
+    let settings: string[] = [];
+    for (const key in this.cardConfig) {
+      if (this.cardConfig) {
+        if (key === 'cardWidth') {
+          settings = [...this.cardConfig[key]];
         }
       }
     }
@@ -50,6 +76,8 @@ export class CardComponent {
   }
 
   private _cardSettings: CustomCardSettings = {
+    bgColor: [],
+    cardWidth: [],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: []

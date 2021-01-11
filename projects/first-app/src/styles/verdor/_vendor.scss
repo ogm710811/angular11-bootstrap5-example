@@ -51,6 +51,44 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   background-image: linear-gradient(to right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
 }
 
+// Utilities
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+    $utilities,
+    (
+      "pill-card-width": (
+        property: width,
+        class: pill-w,
+        responsive: true,
+        values: (
+          s: 15.6rem,
+          m: 24.3rem,
+          l: 32.6rem,
+          xl: 50rem,
+          xxl: 65rem
+        )
+      )
+    )
+);
+
+$utilities: map-merge(
+    $utilities,
+    (
+      "pill-card-height": (
+        property: height,
+        class: pill-h,
+        responsive: true,
+        values: (
+          s: 15.6rem,
+          m: 32.6rem,
+        )
+      )
+    )
+);
+
 // Required - Configuration
 @import "node_modules/bootstrap/scss/functions";
 @import "node_modules/bootstrap/scss/variables";
