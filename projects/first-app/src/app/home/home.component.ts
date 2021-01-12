@@ -13,64 +13,64 @@ export class HomeComponent implements OnInit {
   optionsSimpleLine: AgChartOptions;
 
   customCardSettings1 = {
-    bgColor: CustomCardColors.primary,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-primary'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings2 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: true,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings3 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings4 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings5 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: true,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings6 = {
-    bgColor: CustomCardColors.default,
-    cardSize: CustomCardSizes.large,
+    bgColor: ['bg-card-default'],
+    cardWidth: ['pill-w-xl', 'pill-h-m'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
   };
   customCardSettings7 = {
-    bgColor: CustomCardColors.secondary,
-    cardSize: CustomCardSizes.medium,
+    bgColor: ['bg-card-secondary'],
+    cardWidth: ['pill-w-xl', 'pill-w-lg-l', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
-    bodyAlignment: ['flex-column']
+    bodyAlignment: ['flex-column', 'justify-content-end']
   };
   customCardSettings8 = {
-    bgColor: CustomCardColors.tertiary,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-tertiary'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['align-items-end']
   };
   customCardSettings9 = {
-    bgColor: CustomCardColors.primary,
-    cardSize: CustomCardSizes.small,
+    bgColor: ['bg-card-primary'],
+    cardWidth: ['pill-w-s', 'pill-h-s'],
     hasNotification: false,
     hasIconBadge: false,
     bodyAlignment: ['flex-column', 'align-items-center', 'justify-content-around']
@@ -145,7 +145,7 @@ export class HomeComponent implements OnInit {
         visible: false
       },
       width: 304,
-      height: 95,
+      height: 76,
       padding: {
         top: 5,
         right: -18,

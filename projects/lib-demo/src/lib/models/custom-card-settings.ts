@@ -3,8 +3,8 @@ import {CustomCardSizes} from '../enums/custom-card-sizes.enum';
 
 export interface CustomCardSettings {
   [index: string]: any;
-  bgColor?: CustomCardColors;
-  cardSize?: CustomCardSizes;
+  bgColor: string[];
+  cardWidth: string[];
   hasNotification: boolean;
   hasIconBadge: boolean;
   bodyAlignment: string[];
