@@ -9,6 +9,7 @@ import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { GridColumnsSystemComponent } from './grid-columns-system/grid-columns-system.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     LayoutComponent,
     HeaderComponent,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    GridColumnsSystemComponent
   ],
   imports: [
     BrowserModule,
