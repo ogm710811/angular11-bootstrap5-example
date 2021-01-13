@@ -1,6 +1,10 @@
 
 // Variable overrides
 
+// Grid system
+$grid-columns: 16;
+$grid-gutter-width: 4.0rem;
+
 // Typography
 $font-family-base: 'Roboto';
 $font-size-base: 1.6rem;
@@ -148,8 +152,8 @@ $utilities: map-merge(
 .sidebar-wrapper {
   @include media-breakpoint-up(md) {
     & {
-      flex: 0 0 1;
-      width: auto;
+      //flex: 0 0 1;
+      width: 8rem;
     }
   }
 }
@@ -168,6 +172,15 @@ $utilities: map-merge(
   &--cyan {
     fill: $cyan-500;
   }
+}
+
+.container-lg-px {
+  padding: 2rem;
+}
+
+.row-y-padding {
+  padding-top: 1.8rem;
+  padding-bottom: 1.8rem;
 }
 
 .btn-circle {

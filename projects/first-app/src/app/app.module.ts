@@ -10,6 +10,7 @@ import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { GridColumnsSystemComponent } from './grid-columns-system/grid-columns-system.component';
+import { GridColumnsOneSixSystemComponent } from './grid-columns-one-six-system/grid-columns-one-six-system.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GridColumnsSystemComponent } from './grid-columns-system/grid-columns-s
     HeaderComponent,
     HomeComponent,
     SidebarComponent,
-    GridColumnsSystemComponent
+    GridColumnsSystemComponent,
+    GridColumnsOneSixSystemComponent
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import {GridColumnsSystemComponent} from './grid-columns-system/grid-columns-system.component';
+import {NgModule} from '@angular/core';
+import {RouterModule, Routes} from '@angular/router';
+import {GridColumnsOneSixSystemComponent} from './grid-columns-one-six-system/grid-columns-one-six-system.component';
 import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
@@ -9,8 +9,8 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'grid12',
-    component: GridColumnsSystemComponent
+    path: 'grid16',
+    component: GridColumnsOneSixSystemComponent
   },
   {
     path: '**',
